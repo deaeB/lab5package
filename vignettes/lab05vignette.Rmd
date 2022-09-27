@@ -1,0 +1,40 @@
+---
+title: "lab05vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{lab05vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(lab5package)
+
+# getcityid() is a function tells you the id of a municipality in kolada's api
+# you can use this id for further useage of using api
+
+# get the id
+getcityid("linköping")
+
+# return as a string
+id <- getcityid("linköping")
+print(id)
+class(id)
+
+# case INsensitive
+getcityid("StOckHoLm")
+
+# but remember the name of municipality must be correct
+getcityid("linkoping")
+
+# and regions
+getcityid("region stockholm")
+
+```

@@ -1,12 +1,21 @@
 Package: lab5package
 Type: Package
-Title: What the package does (short line)
+Title: lab05 of kolada api
 Version: 1.0
 Date: 2022-09-27
 Authors@R: c(
     person("Dongwei", "NI", , "donni508@student.liu.se", role = c("aut", "cre")),
     person("Ndayisabye", "Francois", , "ndafr644@student.liu.se", role = "aut"))
 Maintainer: <donni508@student.liu.se>
-Description: More about what it does (maybe more than one line)
+Description: Doing something with api of kolada.se. Incling a simple Shiny application.
 License: GPL-3
 Encoding: UTF-8
+RoxygenNote: 7.2.1
+Imports:
+  httr
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
