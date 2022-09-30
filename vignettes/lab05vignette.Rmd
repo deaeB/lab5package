@@ -37,4 +37,30 @@ getcityid("linkoping")
 # and regions
 getcityid("region stockholm")
 
+
+# getcityidlessdata() is a function does things alike getcityid() but GET & stores less data in your own devices
+# but not exactly having same function, and getcityid() is more recommended
+
+# get the id
+getcityid_lessdata("linköping")
+
+# return as a string
+id <- getcityid_lessdata("linköping")
+print(id)
+class(id)
+
+# case INsensitive
+getcityid_lessdata("LINköping")
+
+# but remember the name of municipality must be correct
+# >getcityid_lessdata("linkoping")
+# Error in getcityid_lessdata("linkoping") : 
+#  Oops, notfound. Check is the input correct and a full name
+
+# id of regions will be returned first when it share a same name with a city
+# so getcityid is more recommended
+getcityid_lessdata("stockholm")
+getcityid("region stockholm")
+getcityid("stockholm")
+
 ```

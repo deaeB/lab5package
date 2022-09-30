@@ -5,7 +5,7 @@
 #' take a name of a sweden municipality, it will print and return the id of that municipality for further usage within kolada's api
 #' 
 #' @param name a string, full name of a municipality(may include region-), Case INsensitive
-#' @return a string, the id if the municipality you choose
+#' @return a string, the id of the municipality you choose
 #' @references https://www.kolada.se/
 #' 
 #' @examples 
@@ -13,13 +13,17 @@
 #' getcityid("linköping")
 #' 
 #' @import httr
-#' @export
+#' @export 
 
 
 # depend: httr
 getcityid <- function(name){
   
   getmuni <- GET("http://api.kolada.se/v2/municipality")
+  
+  if (!is.character(name)) {
+    stop("only string allowed")
+  }
   
   munilist <- content(getmuni)$values
 
@@ -33,4 +37,8 @@ getcityid <- function(name){
   
   return("Oops, notfound. Check is the input correct and a full name")
 }
+# maybe too simple but not enough time
+
+
+
 
