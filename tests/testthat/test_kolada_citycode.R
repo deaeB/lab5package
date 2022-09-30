@@ -19,7 +19,7 @@ test_that("case insensitive",{
   expect_equal(getcityid_lessdata("LINköping"), "0580")
 })
 test_that("city not found",{
-  expect_error(getcityid_lessdata("linkoping"), "Oops, notfound. Check is the input correct and a full name")
+  expect_equal(getcityid_lessdata("linkoping"), "Oops, notfound. Check is the input correct and a full name")
 })
 test_that("error input",{
   expect_error(getcityid_lessdata(132))

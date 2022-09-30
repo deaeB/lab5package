@@ -28,7 +28,7 @@ getcityid_lessdata <- function(name){
   getdata <- GET(muniurl)
   
   if(content(getdata)$count == 0){
-    stop("Oops, notfound. Check is the input correct and a full name")
+    return("Oops, notfound. Check is the input correct and a full name")
   }
   
   cityinfo <- content(getdata)$values
