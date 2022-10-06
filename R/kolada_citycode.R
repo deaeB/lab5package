@@ -2,7 +2,7 @@
 #' 
 #' get the id of a municipality in kolada's api
 #' 
-#' take a name of a sweden municipality, it will print and return the id of that municipality for further usage within kolada's api
+#' take one name of a Sweden municipality among different municipalities of a country so that R will print and return the id of that municipality for further usage within kolada's api
 #' 
 #' @param name a string, full name of a municipality(may include region-), Case INsensitive
 #' @return a string, the id of the municipality you choose
