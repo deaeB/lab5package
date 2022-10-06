@@ -16,7 +16,7 @@ a string, the id of the municipality you choose
 get the id of a municipality in kolada's api
 }
 \details{
-take a name of a sweden municipality, it will print and return the id of that municipality for further usage within kolada's api
+take one name of a Sweden municipality among different municipalities of a country so that R will print and return the id of that municipality for further usage within kolada's api
 }
 \examples{
 

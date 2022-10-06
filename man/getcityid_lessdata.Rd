@@ -7,7 +7,7 @@
 getcityid_lessdata(name)
 }
 \arguments{
-\item{name}{a string, full name of a municipality, Case INsensitive}
+\item{name}{a string, full name of a municipality, Case Insensitive}
 }
 \value{
 a string, the id of the municipality you choose
@@ -16,7 +16,7 @@ a string, the id of the municipality you choose
 get the id of a municipality in kolada's api with less data GET
 }
 \details{
-take a name of a sweden municipality, it will print and return the id of that municipality for further usage within kolada's api
+take one name of a Sweden municipality among different municipalities of a country so that R will print and return the id of that municipality for further usage within kolada's api
 }
 \examples{
 
